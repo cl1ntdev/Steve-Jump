@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: auto;
+    /* font-weight: 900; */
+    font-family: sans-serif;
+}
+body{
+    position: relative;
+    background: rgb(30,38,25);
+    background: url('./bg.jpg');
+    background-size: cover;
+    /* background-position-x: ; */
+    
+    backdrop-filter: blur(50px);
+    /* filter: blur(20px); */
+    /* filter: ; */
+    overflow: hidden;
+}
+
+input{
+    border: 1px solid black;
+    border-radius: 4px;
+    font-weight: 900;
+}
+
+.loginContainer{
+    z-index: 1;
+    font-size: 120%;
+    font-weight: 900;
+    margin-left: 10%;
+    margin-right: 20%;
+    margin-top: 20%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    max-width: 900px;
+    background: white;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;    
+    border-radius: 10px;
+    background: url('./bg.jpg');
+    /* backdrop-filter: blur(2px); */
+}
+
+.formLogin,.name,.password,.formRegister,.regName,.regPassword{
+    padding: 5%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.name,.password,.loginButton,.createAccountButton{
+    margin: 5%;
+}
+
+
+.leaderboards{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* flex-direction: column; */
+   
+    margin-top: 25%;
+    margin-left: 5%;
+    width: 90%;
+    height: 150px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    background: rgb(230, 224, 224);
+    overflow-y: auto;
+}
+.game{
+    background: url('./bgNoGrass.jpg');
+    /* top */
+    position: absolute;
+    /* bottom: -300px; */
+    /* margin: 10px; */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+    width: 100%;
+    bottom: -540px;
+    height: 700px;
+    /* flex-direction: column; */
+    /* background: white; */
+    background-size: cover;
+    /* filter: blur(1px); */
+}
+.gameUI{
+    margin-top: 20%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: auto; 
+    position: relative;
+    z-index: 5;
+}
+.headers{
+    align-items: center;
+    display: flex;
+    gap: 2%;
+}
+.gameField{
+    background: url('./bg.jpg');
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 460px;
+    border: 1px solid brown;
+}
+
+.dino{
+    background: url('./stevey.png');
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    /* background: yellow; */
+    top: 337px;
+    /* border: 1px solid black; */
+}.cactus{
+    background: url('./zombey.webp');
+    position: absolute;
+    background-size: cover;
+    top: 337px;
+    left: 250px;
+    width: 40px;
+    height: 50px;
+    /* border: 1px solid black; */
+    background-repeat: no-repeat;
+
+    /* background: rgb(83, 237, 83); */
+}
+.startGameButton{
+    margin-top: 2%;
+    margin: 2%;
+    font-size: 100%;
+    /* font-weight: 900; */
+}
+
+.accountChoices{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.ch{
+    width: 50%;
+    
+    /* font-weight: 900; */
+}
+.leaderboardShowPlayers{
+    margin: 5%;
+    margin-left: 25%;
+    /* gap: 10px; */
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    /* display: block; */
+}
+
+.headerCont{
+    width: 50%;
+    /* background: gray; */
+}
+td{
+    text-align: center;
+    width: 70%;
+    background: rgb(240, 207, 60);
+
+}
+
+/* CSS */
+button {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family:sans-serif;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  /* font-size: 18px; */
+}
+
+button:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+button:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+
+.commentSection{
+    margin-top: 10%;
+}
+
+.creator{
+    font-weight: 900;
+    margin-left: 10%;
+    top: -20px;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+}
+
+.logo,.creator{
+    position: relative;
+    z-index: 20;
+}

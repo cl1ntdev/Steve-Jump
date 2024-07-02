@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dino Game</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="shotcut icon" type="x-icon" href="/stevey.png"> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+    <img src="./steveJumpLogo.gif" class="logo" alt="logo">
+    <h6 class="creator">by clint</h6>
+    <div class="loginContainer">
+        <div class="formLogin">
+            <div class="name">
+                <label for="name">Input Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="password">
+                <label for="password">Input password</label>
+                <input type="text" name="password" id="password">
+            </div>
+            <div class="accountChoices">
+                <button class="loginButton ch">Login</button>
+                <button class="createAccountButton ch">Register</button>
+            </div>
+            
+        </div>
+        <div class="formRegister">
+            <div class="regName">
+                <label for="regUserName">Register Username</label>
+                <input type="text" name="regUserName" id="regUserName">
+            </div>
+            <div class="regPassword">
+                <label for="regUserPassword">Input Password</label>
+                <input type="text" id="regUserPassword" name="regUserPassword">
+                <label for="confRegPass">Confirm Password</label>
+                <input type="text" id="confRegPass" name="confRegPass">
+            </div>
+            <button class="regSubmitButton">Submit</button>
+            <button class="loginAcc">Login Account</button>
+        </div>
+       
+    </div>
+    <div class="game">
+        <div class="leaderboards"></div>
+        <div class="gameUI">
+            <header class="headers">
+                <h3 class="playerName">Clint</h3>
+                <h3 class="score">1</h3>
+            </header>
+            <div class="gameField">
+                <div class="dino"></div>
+                <!-- <div class="cactus"></div> -->
+            </div>
+           
+            <button class="startGameButton">Start</button>
+            
+        </div>
+        <div class="commentSection">
+                <input type="text" class="comment" placeholder="what can you say">
+                <button class="submitComment" >Submit Comment</button>
+        </div>
+    </div>
+    
+
+    <script src="index.js" type="module"></script>
+</body>
+</html>
